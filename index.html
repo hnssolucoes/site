@@ -165,6 +165,8 @@
                 </div>
         
                 <button type="submit">Enviar</button>
+
+		    <p id="mensagem" style="display: none; color: green;">Obrigado pela mensagem!</p>
                 
                 <input type="hidden" name="accessKey" value="02563d0e-241f-4cc1-9d3e-191f3ba1e890">
                 <input type="hidden" name="emailTo" value="contatos@hnssolucoes.com.br">
@@ -199,6 +201,11 @@
                     dropdownMenu.classList.remove("show");
                 }
             });
+
+		function mostrarMensagem(event) {
+    event.preventDefault(); 
+    document.getElementById("mensagem").style.display = "block";
+}
         });
     </script>
     
