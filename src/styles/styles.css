@@ -145,3 +145,9 @@ button {
     button:hover {
             background: rgb(125, 125, 25); 
         }
+
+
+#ti{
+    color: rgb(125, 125, 25);
+    font-size: 25px;
+}
