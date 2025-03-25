@@ -1,153 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('header.css');
-@import url('home.css');
-@import url('menu.css');
-@import url('testimonials.css');
-@import url('footer.css');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('header.css');
+    @import url('home.css');
+    @import url('menu.css');
+    @import url('testimonials.css');
+    @import url('footer.css');
 
 
 
-* {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-html {
-    scroll-behavior: smooth;
-}
-
-
-body {
-    background-color: var(--color-primary-1);
-}
-
-section {
-    padding: 28px 8%;
-}
-
-.btn-default {
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-primary-5);
-    border-radius: 12px;
-    padding: 10px 14px;
-    font-weight: 600;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: background-color .3s ease;
-}
-
-.btn-default:hover {
-    background-color: var(--color-primary-3);
-}
-
-.social-media-buttons {
-    display: flex;
-    gap: 18px;
-}
-
-.social-media-buttons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 40px;
-    background-color: var(--color-neutral-0);
-    font-size: 1.25rem;
-    border-radius: 10px;
-    text-decoration: none;
-    color: var(--color-neutral-1);;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow .3s ease;
-}
-
-.social-media-buttons a:hover {
-    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
-}
-
-.section-title {
-    color: var(--color-primary-6);
-    font-size: 1.563rem;
-}
-
-.section-subtitle {
-    font-size: 2.1875rem;
-} 
-
-#contato{
-    text-align: center;
-}
+    html {
+        scroll-behavior: smooth;
+    }
 
 
-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    padding: 20px; 
-}
+    body {
+        background-color: var(--color-primary-1);
+    }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    width: 400px;
-}
-#container {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
+    section {
+        padding: 28px 8%;
+    }
 
-.box {
-    margin: 0;
-    padding: 10px; 
-}
+    .btn-default {
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-primary-5);
+        border-radius: 12px;
+        padding: 10px 14px;
+        font-weight: 600;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: background-color .3s ease;
+    }
 
-.title, .description {
-    margin: 0;
-}
-.input-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-.input-group label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
-}
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid rgb(145, 145, 31);
-    border-radius: 4px;
-    font-size: 10px;
-}
-button {
-    width: 100%;
-    padding: 12px;
-    background: rgb(145, 145, 31);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-    button:hover {
-            background: rgb(125, 125, 25); 
-        }
+    .btn-default:hover {
+        background-color: var(--color-primary-3);
+    }
+
+    .social-media-buttons {
+        display: flex;
+        gap: 18px;
+    }
+
+    .social-media-buttons a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 40px;
+        background-color: var(--color-neutral-0);
+        font-size: 1.25rem;
+        border-radius: 10px;
+        text-decoration: none;
+        color: var(--color-neutral-1);;
+        box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+        transition: box-shadow .3s ease;
+    }
+
+    .social-media-buttons a:hover {
+        box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+        color: var(--color-primary-6);
+        font-size: 1.563rem;
+    }
+
+    .section-subtitle {
+        font-size: 2.1875rem;
+    } 
+
+    #contato{
+        text-align: center;
+    }
 
 
-#ti{
-    color: rgb(125, 125, 25);
-    font-size: 25px;
-}
+    center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        padding: 20px; 
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        width: 400px;
+    }
+    #container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .box {
+        margin: 0;
+        padding: 10px; 
+    }
+
+    .title, .description {
+        margin: 0;
+    }
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .input-group label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid rgb(145, 145, 31);
+        border-radius: 4px;
+        font-size: 10px;
+    }
+    button {
+        width: 100%;
+        padding: 12px;
+        background: rgb(145, 145, 31);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+        button:hover {
+                background: rgb(125, 125, 25); 
+            }
+
+
+    #ti{
+        color: rgb(125, 125, 25);
+        font-size: 25px;
+    }
