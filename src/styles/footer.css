@@ -1,21 +1,21 @@
-footer {
-    background-color: var(--color-primary-2);
-    text-align: center;
-    background-color: rgb(145, 145, 31);
-}
+    footer {
+        background-color: var(--color-primary-2);
+        text-align: center;
+        background-color: rgb(145, 145, 31);
+    }
 
 
 
-#copyright {
-    color: white;;
-    font-weight: 500;
-}
+    #copyright {
+        color: white;;
+        font-weight: 500;
+    }
 
-#footer_items a {
-    color: white;
-    text-decoration: none;
-}
+    #footer_items a {
+        color: white;
+        text-decoration: none;
+    }
 
-#footer_items a:hover {
-    text-decoration: underline;
-}
+    #footer_items a:hover {
+        text-decoration: underline;
+    }
