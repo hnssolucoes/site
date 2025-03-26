@@ -4,7 +4,7 @@
             position: sticky;
             top: 0;
             background-color: white;
-            color: rgb(182, 124, 0);
+            color: rgb(145, 145, 31);
             z-index: 3;
             margin-top: 10px;
         }
@@ -27,20 +27,20 @@
             padding: 10px;
         }
         
-        /* Estiliza o container da logo */
+
         .menu-container {
             display: flex;
             align-items: center;
             gap: 8px;
         }
         
-        /* Oculta o título no mobile */
+ 
         @media screen and (max-width: 600px) {
             #ti {
                 display: none;
             }
         
-            /* Altera o layout para coluna no mobile */
+         
             #navbar {
                 flex-direction: column;
                 align-items: center;
@@ -50,7 +50,7 @@
                 flex-direction: column;
             }
         
-            /* Posiciona o botão abaixo da logo */
+        
             .dropdown {
                 margin-top: 10px;
             }
@@ -194,7 +194,42 @@
         #dishes .dish {
             margin: 5px;
         }
-        #formContato div {
+        #contato {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        #formContato {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .form-group {
+            display: flex;
+            flex-direction: column;
             margin-bottom: 15px;
         }
-
+    
+        .required {
+            color: red;
+        }
+    
+        .error-message {
+            color: red;
+            font-size: 12px;
+            display: none;
+        }
+    
+        input:invalid + .error-message, textarea:invalid + .error-message {
+            display: block;
+        }
+    
+        .checklist {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
