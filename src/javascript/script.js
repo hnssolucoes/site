@@ -57,5 +57,51 @@ $(document).ready(function() {
         duration: 1000,
         distance: '20%'
     })
+
+
+    
+    document.getElementById("github-link").addEventListener("click", function() {
+        window.open("https://github.com/efak77", "_blank");
+    });
+
+        function mostrarPopup(titulo, descricao) {
+                alert(titulo + ":\n" + descricao);
+            }
+
+                function mostrarPopup(event) {
+                    event.preventDefault(); 
+                    alert("Obrigado por sua mensagem! Em breve, a HNS entrará em contato.");
+
+                    document.getElementById("formContato").submit(); 
+                }
+
+
+        document.getElementById("dropdown_btn").addEventListener("click", function() {
+            var dropdownMenu = document.getElementById("dropdown_menu");
+            dropdownMenu.classList.toggle("active"); 
+        });
+
+
+    var filePickerSetup = {
+            mimetype: 'image/*'
+        };
+
+
+        var onSuccess = function (file) {
+            var inputFile = document.getElementById('file');
+            inputFile.value = file.url;
+        };
+
+
+        var onError = function (data) {
+            alert('Houve um erro ao carregar seus arquivos');
+        };
+
+
+        var filePickerButton = document.getElementById('filepicker');
+        filePickerButton.addEventListener('click', function() {
+            filepicker.setKey("A4xZuT80pQ3Kc1iZ3sj2Mz");
+            filepicker.pick(filePickerSetup, onSuccess, onError);
+        });
 });
 
