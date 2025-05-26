@@ -173,6 +173,12 @@
     <section id="contato">
         <h3 class="section-subtitle" style=" color: rgb(145, 145, 31)">Contatos</h3>
          <form action="https://formsubmit.co/contatos@hnssolucoes.com.br" method="POST" id="formContato">
+              <input type="hidden" name="_next" value="https://hnssolucoes.com.br/index.html"/>
+             <input type="hidden" name="_subject" value="Novo email na página">
+             <input type="text" name="_honey" style="display:none">
+             <input type="hidden" name="_template" value="table">
+            <input type="submit" value="Enviar" style="background-color: rgb(145, 145, 31);" />
+             
             <div class="form-group">
                 <label for="nome" style="text-align: left;">Nome:<span class="required">*</span></label>
                 <input type="text" name="Nome" id="nome" required />
@@ -189,11 +195,7 @@
                 <small class="error-message" style="font-size: 10px; text-align: left;">* Campo obrigatório</small>
             </div>
 
-            <input type="hidden" name="_next" value="https://hnssolucoes.com.br/index.html"/>
-             <input type="hidden" name="_subject" value="Novo email na página">
-             <input type="text" name="_honey" style="display:none">
-             <input type="hidden" name="_template" value="table">
-            <input type="submit" value="Enviar" style="background-color: rgb(145, 145, 31);" />
+           
         </form>
     </section>
 
