@@ -206,42 +206,6 @@
         </p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const dropdownMenu = document.getElementById('dropdown_menu');
-            const dropdownLinks = dropdownMenu.querySelectorAll('a');
-            const dropdownButton = document.getElementById('dropdown_btn');
-
-            dropdownLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    dropdownMenu.style.display = 'none';
-                });
-            });
-
-            dropdownButton.addEventListener('click', () => {
-                if (dropdownMenu.style.display === 'block') {
-                    dropdownMenu.style.display = 'none';
-                } else {
-                    dropdownMenu.style.display = 'block';
-                }
-            });
-        });
-
-        document.getElementById("github-link").addEventListener("click", function () {
-            window.open("https://github.com/Eme-cstt", "_blank");
-        });
-
-        function mostrarPopup(titulo, descricao) {
-            alert(titulo + ":\n" + descricao);
-        }
-
-        function mostrarPopup(event) {
-            event.preventDefault();
-            alert("Obrigado por sua mensagem! Em breve, a HNS entrará em contato.");
-
-            document.getElementById("formContato").submit();
-        }
-    </script>
 
 </body>
 
