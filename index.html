@@ -40,9 +40,10 @@
                 </li>
                 <li class="nav-item">
                     <a href="#servicos">Serviços</a>
+
                 </li>
                 <li class="nav-item">
-                    <a href="#formContato" class="contact-link">Contatos</a>
+                    <a href="#contato" class="contact-link">Contatos</a>
                 </li>
             </ul>
             <div class="dropdown">
@@ -53,8 +54,8 @@
                 </button>
                 <ul id="dropdown_menu">
                     <a href="#home">Início</a>
-                    <a href="#menu">Serviços</a>
-                    <a href="#formContato">Contato</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#contato">Contato</a>
                 </ul>
             </div>
         </nav>
@@ -64,9 +65,7 @@
         <section id="home">
             <div id="container">
                 <div class="box">
-                    <h1 class="title">
-                        <div id="id">Protegendo o seu futuro digital</div>
-                    </h1>
+                   <h1 class="title" id="home-title">Protegendo o seu futuro digital</h1>
                     <p class="description">
                         Com mais de 10 anos de experiência em Cyber Segurança, a HNS Soluções oferece expertise e
                         soluções
@@ -103,19 +102,15 @@
 
 
 
-    <section id="menu">
-        <h3 class="section-subtitle">
-            <div id="servicos"></div>Nossos serviços</div>
-        </h3>
+   <section id="menu">
+    <section id="servicos">
+        <h3 class="section-subtitle">Nossos serviços</h3>
 
         <div id="dishes">
             <div class="dish"
                 onclick="mostrarPopup('Projetos', 'Oferecemos Serviços de Desenvolvimento e Implementação de Projetos de Segurança Personalizados')">
                 <img src="src/imagens/1.png" alt="Projetos" class="dish-image" width="150px" height="150px">
-                <h3 class="dish-title">
-                    PROJETOS
-                </h3>
-
+                <h3 class="dish-title">PROJETOS</h3>
                 <span class="dish-description">
                     Oferecemos Serviços de Desenvolvimento e Implementação de Projetos de Segurança Personalizados
                 </span>
@@ -123,13 +118,8 @@
 
             <div class="dish"
                 onclick="mostrarPopup('SOC', 'Oferece serviços de SOC remoto, ou seja, de centro de operações de segurança (SOC) gerenciado remotamente.')">
-                <div class="dish-heart"></div>
-
-                <img src="src/imagens/3.png" alt="Projetos" class="dish-image" width="150px" height="150px">
-                <h3 class="dish-title">
-                    SOC
-                </h3>
-
+                <img src="src/imagens/3.png" alt="SOC" class="dish-image" width="150px" height="150px">
+                <h3 class="dish-title">SOC</h3>
                 <span class="dish-description">
                     Oferece serviços de SOC remoto, ou seja, de centro de operações de segurança (SOC) gerenciado
                     remotamente.
@@ -137,13 +127,8 @@
             </div>
 
             <div class="dish" onclick="mostrarPopup('Laudos', 'Pareceres Técnicos de Segurança Cibernética.')">
-                <div class="dish-heart"></div>
-
-                <img src="src/imagens/4.png" alt="Projetos" class="dish-image" width="150px" height="150px">
-                <h3 class="dish-title">
-                    LAUDOS
-                </h3>
-
+                <img src="src/imagens/4.png" alt="Laudos" class="dish-image" width="150px" height="150px">
+                <h3 class="dish-title">LAUDOS</h3>
                 <span class="dish-description">
                     Pareceres Técnicos de Segurança Cibernética.
                 </span>
@@ -151,54 +136,48 @@
 
             <div class="dish"
                 onclick="mostrarPopup('Pen Test', 'Oferecemos serviços de Teste de Penetração (PEN Test) para avaliação da segurança cibernética.')">
-                <div class="dish-heart"></div>
-
-                <img src="src/imagens/2.png" alt="Projetos" class="dish-image" width="150px" height="150px">
-                <h3 class="dish-title">
-                    PEN TEST
-                </h3>
-
+                <img src="src/imagens/2.png" alt="Pen Test" class="dish-image" width="150px" height="150px">
+                <h3 class="dish-title">PEN TEST</h3>
                 <span class="dish-description">
                     Oferecemos serviços de Teste de Penetração (PEN Test) para avaliação da segurança cibernética.
                 </span>
             </div>
         </div><br><br>
+    </section> <!-- FECHAMENTO CORRETO DA SEÇÃO SERVIÇOS -->
+</section>
 
-    </section>
+<!-- LINHA DE SEPARAÇÃO DEPOIS DA SEÇÃO DE SERVIÇOS -->
+<hr style="height: 10px; background-color: rgb(145, 145, 31); border: none;">
 
+<!-- SEÇÃO DE CONTATO COMEÇA AGORA -->
+<section id="contato">
+    <h3 class="section-subtitle" style="color: rgb(145, 145, 31);">Contatos</h3>
+    <form action="https://formsubmit.co/contatos@hnssolucoes.com.br" method="POST">
+        <input type="hidden" name="_next" value="https://hnssolucoes.com.br/index.html" />
+        <input type="hidden" name="_subject" value="Novo email na página">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_template" value="table">
 
-    <hr style="height: 10px; background-color: rgb(145, 145, 31); border: none;">
+        <div class="form-group">
+            <label for="nome">Nome:<span class="required">*</span></label>
+            <input type="text" name="Nome" id="nome" required />
+        </div>
 
+        <div class="form-group">
+            <label for="email">Email:<span class="required">*</span></label>
+            <input type="email" name="Email" id="email" required />
+        </div>
 
-    <section id="contato">
-        <h3 class="section-subtitle" style=" color: rgb(145, 145, 31)">Contatos</h3>
-         <form action="https://formsubmit.co/contatos@hnssolucoes.com.br" method="POST" id="formContato">
-              <input type="hidden" name="_next" value="https://hnssolucoes.com.br/index.html"/>
-             <input type="hidden" name="_subject" value="Novo email na página">
-             <input type="text" name="_honey" style="display:none">
-             <input type="hidden" name="_template" value="table">
-             
-            <div class="form-group">
-                <label for="nome" style="text-align: left;">Nome:<span class="required">*</span></label>
-                <input type="text" name="Nome" id="nome" required />
-            </div>
+        <div class="form-group">
+            <label for="mensagem">Mensagem:<span class="required">*</span></label>
+            <textarea name="Mensagem" id="mensagem" required></textarea>
+            <small class="error-message" style="font-size: 10px;">* Campo obrigatório</small>
+        </div>
 
-            <div class="form-group">
-                <label for="email" style="text-align: left;">Email:<span class="required">*</span></label>
-                <input type="email" name="Email" id="email" required />
-            </div>
+        <input type="submit" value="Enviar" style="background-color: rgb(145, 145, 31); cursor: pointer;" />
+    </form>
+</section>
 
-            <div class="form-group">
-                <label for="mensagem" style="text-align: left;">Mensagem:<span class="required">*</span></label>
-                <textarea name="Mensagem" id="mensagem" required></textarea>
-                <small class="error-message" style="font-size: 10px; text-align: left;">* Campo obrigatório</small>
-            </div>
-
-                <input type="submit" value="Enviar" style="background-color: rgb(145, 145, 31);" />
-
-           
-        </form>
-    </section>
 
     <footer>
          <p>
@@ -207,6 +186,13 @@
     </footer>
 
 
+
+    <script>
+    function toggleDescricao(el) {
+        const popup = el.nextElementSibling;
+        popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
 </body>
 
 </html>
