@@ -154,44 +154,44 @@
 
 
 
-.dish {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
+    .dish {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    }
 
-.dish:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  z-index: 10;
-  position: relative;
-}
-
-
-.dish-image {
-  transition: transform 0.3s ease;
-}
-
-.dish:hover .dish-image {
-  transform: scale(1.1);
-}
+    .dish:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    position: relative;
+    }
 
 
+    .dish-image {
+    transition: transform 0.3s ease;
+    }
 
-.section-subtitle {
-    text-align: center;
-}
-
-
-:target {
-    scroll-margin-top: 70px; 
-}
+    .dish:hover .dish-image {
+    transform: scale(1.1);
+    }
 
 
-#formContato {
-  scroll-margin-top: 100px; 
-}
+
+    .section-subtitle {
+        text-align: center;
+    }
 
 
-.title{
-    color: rgb(125, 125, 25);
-}
+    :target {
+        scroll-margin-top: 70px; 
+    }
+
+
+    #formContato {
+    scroll-margin-top: 100px; 
+    }
+
+
+    .title{
+        color: rgb(125, 125, 25);
+    }
