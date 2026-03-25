@@ -1,0 +1,237 @@
+header {
+    width: 100%;
+    padding: 28px 8%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    color: rgb(145, 145, 31);
+    z-index: 3;
+    margin-top: 10px;
+}
+
+#top-bar {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(145, 145, 31);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 2%;
+    min-height: auto;
+}
+
+#navbar img {
+    height: 50px;
+    width: auto;
+    margin: 0;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#nav_logo {
+    font-size: 50px;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-weight: 800;
+    color: rgb(145, 145, 31);
+}
+
+.nav-item.active a {
+    color: rgb(145, 145, 31);
+    border-bottom: 3px solid var(--color-primary-4);
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown_btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 25px;
+    position: relative;
+}
+
+.menu-line {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(145, 145, 31);
+    position: absolute;
+    transition: 0.3s;
+}
+
+.menu-line:nth-child(1) {
+    top: 0;
+}
+
+.menu-line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-line:nth-child(3) {
+    bottom: 0;
+}
+
+#dropdown_menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+#dropdown_menu a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: rgb(145, 145, 31);
+}
+
+.dropdown:hover #dropdown_menu {
+    display: block;
+}
+
+.menu img {
+    width: 150px;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    #ti {
+        display: none;
+    }
+
+    #navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+    }
+
+    #nav_list {
+        display: none;
+    }
+
+    #dropdown_btn {
+        display: block;
+    }
+
+    .dropdown.active #dropdown_menu {
+        display: block;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center; 
+    }
+}
+
+
+
+
+/*FORMULARIO*/
+#contato {
+    width: 100%;
+    padding: 40px 15px; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    overflow-x: hidden; 
+}
+
+#contato form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contato .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#contato input, 
+#contato textarea {
+    width: 100%;
+    box-sizing: border-box; 
+    border: 1px solid rgb(145, 145, 31);
+    background-color: white;
+    color: #fff;
+    padding: 12px;
+}
+
+.borda-lateral {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#features {
+    scroll-margin-top: 150px !important; 
+    display: block;
+    position: relative;
+}
+
+#diferenciais {
+    scroll-margin-top: 150px !important;
+}
+
+#servicos, #services { 
+    scroll-margin-top: 130px !important;
+}
+
+#contatos, #contact {
+    scroll-margin-top: 130px !important;
+}
+
+#home {
+    scroll-margin-top: 130px !important;
+}
