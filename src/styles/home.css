@@ -226,3 +226,22 @@
         font-size: 1.1rem;
         color: #000; 
     }
+
+
+label, 
+.label, 
+#contatos label, 
+#contatos span, 
+.campo-obrigatorio {
+    color: #000000 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: inline-block;
+}
+
+
+input, 
+textarea, 
+input::placeholder {
+    color: #000000 !important;
+}
