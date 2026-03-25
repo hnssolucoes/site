@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNS Soluções</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/footer.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="stylesheet" href="src/styles/menu.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/testimonials.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="icon" type="image/png" href="src/imagens/logo.png">
+</head>
+
+<body>
+
+    <div id="top-bar"></div>
+    <header>
+
+        <nav id="navbar">
+            <i class="menu">
+                <img src="src/imagens/logo.png" alt="Logo HNS" width="80" height="60"
+                    style="vertical-align: middle; margin-right: 8px;">
+                <class id="ti"><b>HNS Soluções em Cyber Segurança</b></class>
+            </i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+
+                
+                <li class="nav-item">
+                    <a href="#diferenciais" class="contact-link">Diferenciais</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#servicos">Serviços</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contato" class="contact-link">Contatos</a>
+                </li>
+
+            </ul>
+            <div class="dropdown">
+                <button id="dropdown_btn">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </button>
+                <ul id="dropdown_menu">
+                    <a href="#home">Início</a>
+                    <a href="#diferenciais">Diferenciais</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#contato">Contato</a>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="content">
+       <section id="home">
+    <div id="container">
+        
+        <div class="home-intro">
+            <h1 class="title" id="home-title">Protegendo o seu futuro digital</h1>
+            <p class="description">
+                Com mais de 10 anos de experiência em Cyber Segurança, a HNS Soluções oferece expertise e soluções personalizadas para proteger o seu negócio contra as ameaças cibernéticas em constante evolução.
+            </p>
+        </div>
+
+        <div class="mission-values-container">
+            
+            <div class="box-info">
+                <h2 class="title-info">
+                    <i class="fas fa-gem"></i>
+                    <span>Nossos Valores</span>
+                </h2>
+                <ul class="list-description">
+                    <li><strong>Compromisso:</strong> Dedicação total à segurança dos nossos clientes.</li>
+                    <li><strong>Integridade:</strong> Ética e transparência em todas as ações.</li>
+                    <li><strong>Inovação:</strong> Busca constante por soluções de ponta.</li>
+                </ul>
+            </div>
+
+            <div class="vertical-divider"></div>
+
+            <div class="box-info">
+                <h2 class="title-info">
+                    <i class="fas fa-bullseye"></i>
+                    <span>Nossa Missão</span>
+                </h2>
+                <p class="description">
+                    Proporcionar um ambiente digital seguro e confiável para os nossos clientes, através de soluções eficazes e personalizadas de Cyber Segurança.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+    </main>
+
+
+
+    <hr style="height: 10px; background-color: rgb(145, 145, 31); border: none;">
+
+
+    <section id="features">
+        <h3 class="section-subtitle"id="diferenciais">Nossos Diferenciais</h3><div class="features-container">
+            <div class="feature-item">
+                <i class="fas fa-user-shield"></i>
+                <p>+10 Anos de Experiência</p>
+            </div>
+            
+            <div class="feature-item">
+                <i class="fas fa-clock"></i>
+                <p>Suporte Especializado</p>
+            </div>
+            
+            <div class="feature-item">
+                <i class="fas fa-file-contract"></i>
+                <p>Conformidade LGPD</p>
+            </div>
+        </div>
+    </section>
+
+
+     <hr style="height: 10px; background-color: rgb(145, 145, 31); border: none;">
+
+
+
+   <section id="menu">
+    <section id="servicos">
+        <h3 class="section-subtitle">Nossos serviços</h3>
+
+        <div id="dishes">
+            <div class="dish"
+                onclick="mostrarPopup('Projetos', 'Oferecemos Serviços de Desenvolvimento e Implementação de Projetos de Segurança Personalizados')">
+                <img src="src/imagens/1.png" alt="Projetos" class="dish-image" width="150px" height="150px">
+                <h3 class="dish-title">PROJETOS</h3>
+                <span class="dish-description">
+                    Oferecemos Serviços de Desenvolvimento e Implementação de Projetos de Segurança Personalizados
+                </span>
+            </div>
+
+            <div class="dish"
+                onclick="mostrarPopup('SOC', 'Oferece serviços de SOC remoto, ou seja, de centro de operações de segurança (SOC) gerenciado remotamente.')">
+                <img src="src/imagens/3.png" alt="SOC" class="dish-image" width="150px" height="150px">
+                <h3 class="dish-title">SOC</h3>
+                <span class="dish-description">
+                    Oferece serviços de SOC remoto, ou seja, de centro de operações de segurança (SOC) gerenciado
+                    remotamente.
+                </span>
+            </div>
+
+            <div class="dish" onclick="mostrarPopup('Laudos', 'Pareceres Técnicos de Segurança Cibernética.')">
+                <img src="src/imagens/4.png" alt="Laudos" class="dish-image" width="150px" height="150px">
+                <h3 class="dish-title">LAUDOS</h3>
+                <span class="dish-description">
+                    Pareceres Técnicos de Segurança Cibernética.
+                </span>
+            </div>
+
+            <div class="dish"
+                onclick="mostrarPopup('Pen Test', 'Oferecemos serviços de Teste de Penetração (PEN Test) para avaliação da segurança cibernética.')">
+                <img src="src/imagens/2.png" alt="Pen Test" class="dish-image" width="150px" height="150px">
+                <h3 class="dish-title">PEN TEST</h3>
+                <span class="dish-description">
+                    Oferecemos serviços de Teste de Penetração (PEN Test) para avaliação da segurança cibernética.
+                </span>
+            </div>
+        </div><br><br>
+    </section> <!-- FECHAMENTO CORRETO DA SEÇÃO SERVIÇOS -->
+</section>
+
+<!-- LINHA DE SEPARAÇÃO DEPOIS DA SEÇÃO DE SERVIÇOS -->
+<hr style="height: 10px; background-color: rgb(145, 145, 31); border: none;">
+
+<!-- SEÇÃO DE CONTATO COMEÇA AGORA -->
+<section id="contato">
+    <h3 class="section-subtitle" style="color: rgb(145, 145, 31);">Contatos</h3>
+    <form action="https://formsubmit.co/contatos@hnssolucoes.com.br" method="POST">
+        <input type="hidden" name="_next" value="https://hnssolucoes.com.br/index.html" />
+        <input type="hidden" name="_subject" value="Novo email na página">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="form-group">
+            <label for="nome">Nome:<span class="required">*</span></label>
+            <input type="text" name="Nome" id="nome" required />
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:<span class="required">*</span></label>
+            <input type="email" name="Email" id="email" required />
+        </div>
+
+        <div class="form-group">
+            <label for="mensagem">Mensagem:<span class="required">*</span></label>
+            <textarea name="Mensagem" id="mensagem" required></textarea>
+            <small class="error-message" style="font-size: 10px;">* Campo obrigatório</small>
+        </div>
+
+        <input type="submit" value="Enviar" style="background-color: rgb(145, 145, 31); cursor: pointer;" />
+    </form>
+</section>
+
+
+    <footer>
+         <p>
+             &copy; 2026 - By <a href="https://github.com/Eme-cstt" target="_blank" style="text-decoration: none; color: inherit;">Emerson Castro</a>
+        </p>
+    </footer>
+
+
+
+    <script>
+    function toggleDescricao(el) {
+        const popup = el.nextElementSibling;
+        popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>

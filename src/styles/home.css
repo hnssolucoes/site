@@ -1,0 +1,228 @@
+#home {
+        display: flex;
+        min-height: calc(10vh - 91px);
+        position: relative;
+        color: #000; 
+        background-color: transparent;
+        padding: 60px 20px;
+        padding-top: 20px;
+        padding-bottom: 60px;
+        scroll-margin-top: 100px;
+    }
+
+    #home #container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .home-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+    .home-intro .title {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: rgb(145, 145, 31); 
+    }
+
+    .home-intro .description {
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+        color: #000; 
+    }
+
+
+    .mission-values-container {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .box-info {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .title-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 1.5rem;
+        color: rgb(145, 145, 31); 
+        margin-bottom: 15px;
+    }
+
+    .title-info i {
+        color: rgb(145, 145, 31);
+        font-size: 1.2rem;
+    }
+
+    
+    .list-description {
+        list-style: none;
+        padding: 0;
+        line-height: 2;
+        color: #000;
+    }
+
+    .list-description strong {
+        color: rgb(145, 145, 31);
+    }
+
+    /* Barra Divisora */
+    .vertical-divider {
+        width: 2px;
+        background-color: rgb(145, 145, 31);
+        opacity: 0.3;
+    }
+    
+
+    #cta {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 5%;
+    }
+
+    #cta .title {
+        font-size: 1.5rem; 
+        color: #000; 
+    }
+
+    #cta .title span {
+        color: var(--color-primary-6);
+    }
+
+    #cta .description {
+        font-size: 1.2rem;
+        color: #000; 
+    }
+
+    #cta_buttons {
+        display: flex;
+        gap: 24px;
+    }
+
+    #cta_buttons a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    #phone_button {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 8px 14px;
+        font-weight: 500;
+        box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        color: #000; 
+    }
+
+    #phone_button button {
+        box-shadow: none;
+        color: #000;
+    }
+
+
+    .shape {
+        background-color: var(--color-primary-2);
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        border-radius: 40% 30% 0% 20%;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    @media screen and (max-width: 1170px) {
+        #home {
+            min-height: 100%;
+            padding-top: 0px;
+        }
+
+    }
+
+    @media screen and (max-width: 450px) {
+        #phone_button button {
+            display: none;
+        }
+    }
+
+    #id{
+        color: rgb(145, 145, 31);
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column; 
+        gap: 60px; 
+    }
+
+    body {
+        border-left: 15px solid  rgb(145, 145, 31);
+        border-right: 15px solid  rgb(145, 145, 31);
+        margin: 0;
+        padding: 0;
+        color: #000; 
+        scroll-margin-top: 100px;
+    }
+
+
+
+    /* PARTE DOS DIFERENCIAIS*/
+    #features {
+        scroll-margin-top: 120px;
+        padding: 60px 20px;
+        background-color: white;
+        border-top: 1px solid white;
+        text-align: center;
+    }
+
+    .section-subtitle {
+        color: rgb(145, 145, 31);
+        font-size: 2rem;
+        margin-bottom: 40px; 
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .features-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .feature-item {
+        flex: 1;
+        min-width: 200px;
+        color: #000; 
+        transition: transform 0.3s ease;
+    }
+
+    .feature-item:hover {
+        transform: translateY(-5px); 
+    }
+
+    .feature-item i {
+        color: rgb(145, 145, 31);
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        display: block; 
+    }
+
+    .feature-item p {
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #000; 
+    }
