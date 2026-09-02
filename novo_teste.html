@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <title>HNS Soluções · Cyber Segurança</title>
-  <!-- Font Awesome 6 (gratuito) -->
+  <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <!-- Google Fonts (Inter + Poppins) -->
+  <!-- Google Fonts: Inter + Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="src/imagens/logo.png" />
   <style>
     /* ——— RESET & BASE ——— */
@@ -25,9 +25,9 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background: #f8fafc;
-      color: #0b1a2b;
-      line-height: 1.5;
+      background: #f2f4f8;
+      color: #1a1e2b;
+      line-height: 1.6;
     }
 
     a {
@@ -43,20 +43,20 @@
 
     /* ——— HEADER / NAVBAR ——— */
     header {
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.02);
       position: sticky;
       top: 0;
       z-index: 100;
-      border-bottom: 1px solid rgba(145, 145, 31, 0.15);
+      border-bottom: 1px solid rgba(60, 80, 100, 0.08);
     }
 
     #navbar {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 0.8rem 2rem;
+      padding: 0.7rem 2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -67,51 +67,51 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      font-family: 'Outfit', sans-serif;
       font-weight: 700;
-      font-size: 1.2rem;
-      letter-spacing: -0.3px;
+      font-size: 1.25rem;
+      letter-spacing: -0.4px;
+      color: #1a1e2b;
     }
 
     .menu-brand img {
-      width: 48px;
-      height: 48px;
+      width: 44px;
+      height: 44px;
       object-fit: contain;
     }
 
-    .menu-brand span {
-      color: #0b1a2b;
-    }
-
     .menu-brand .highlight {
-      color: #91911f;
+      color: #3b5e6b;
       font-weight: 600;
     }
 
     #nav_list {
       display: flex;
       list-style: none;
-      gap: 2rem;
+      gap: 2.2rem;
       align-items: center;
     }
 
     #nav_list .nav-item a {
       font-weight: 500;
       font-size: 0.95rem;
-      color: #1e2f3f;
+      color: #2d3a47;
       transition: 0.2s;
       position: relative;
       padding: 0.2rem 0;
+      letter-spacing: -0.2px;
     }
 
     #nav_list .nav-item a::after {
       content: '';
       position: absolute;
-      bottom: -2px;
+      bottom: -3px;
       left: 0;
       width: 0%;
       height: 2px;
-      background: #91911f;
+      background: #3b5e6b;
       transition: 0.25s ease;
+      border-radius: 4px;
     }
 
     #nav_list .nav-item a:hover::after,
@@ -120,10 +120,10 @@
     }
 
     #nav_list .nav-item a:hover {
-      color: #91911f;
+      color: #3b5e6b;
     }
 
-    /* dropdown (hamburger) */
+    /* dropdown */
     .dropdown {
       display: none;
     }
@@ -140,8 +140,8 @@
 
     .menu-line {
       width: 28px;
-      height: 3px;
-      background: #0b1a2b;
+      height: 2.5px;
+      background: #1a1e2b;
       border-radius: 4px;
       transition: 0.2s;
     }
@@ -149,31 +149,31 @@
     #dropdown_menu {
       display: none;
       flex-direction: column;
-      background: white;
-      position: absolute;
-      top: 70px;
-      right: 1.5rem;
-      width: 220px;
-      border-radius: 18px;
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
-      padding: 0.8rem 0;
-      border: 1px solid rgba(145, 145, 31, 0.15);
-      backdrop-filter: blur(8px);
       background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      position: absolute;
+      top: 68px;
+      right: 1.5rem;
+      width: 210px;
+      border-radius: 20px;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.04);
+      padding: 0.6rem 0;
+      border: 1px solid rgba(60, 80, 100, 0.06);
     }
 
     #dropdown_menu a {
       padding: 0.7rem 1.5rem;
       font-weight: 500;
-      color: #1e2f3f;
+      color: #1f2b36;
       transition: 0.15s;
       border-left: 3px solid transparent;
+      font-size: 0.95rem;
     }
 
     #dropdown_menu a:hover {
-      background: rgba(145, 145, 31, 0.06);
-      border-left-color: #91911f;
-      color: #91911f;
+      background: rgba(59, 94, 107, 0.04);
+      border-left-color: #3b5e6b;
+      color: #3b5e6b;
     }
 
     .dropdown.open #dropdown_menu {
@@ -184,26 +184,28 @@
     section {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 3rem 2rem;
+      padding: 3.5rem 2rem;
     }
 
     .section-subtitle {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: -0.4px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
       margin-bottom: 2.5rem;
       position: relative;
       display: inline-block;
+      color: #1a1e2b;
     }
 
     .section-subtitle::after {
       content: '';
       position: absolute;
-      bottom: -6px;
+      bottom: -8px;
       left: 0;
-      width: 60px;
-      height: 4px;
-      background: #91911f;
+      width: 52px;
+      height: 3px;
+      background: #3b5e6b;
       border-radius: 4px;
     }
 
@@ -218,17 +220,17 @@
     }
 
     hr.divider {
-      height: 4px;
-      background: linear-gradient(90deg, #91911f 0%, #d4d47a 80%);
+      height: 2px;
+      background: linear-gradient(90deg, #3b5e6b 0%, #b0c4cd 80%);
       border: none;
       margin: 0 auto;
       max-width: 1280px;
-      opacity: 0.25;
+      opacity: 0.2;
     }
 
     /* ——— HOME ——— */
     #home {
-      padding-top: 2rem;
+      padding-top: 2.5rem;
       padding-bottom: 2rem;
     }
 
@@ -239,27 +241,30 @@
     }
 
     .home-intro {
-      max-width: 800px;
+      max-width: 780px;
     }
 
     .home-intro .title {
-      font-size: 2.8rem;
+      font-family: 'Outfit', sans-serif;
+      font-size: 3.2rem;
       font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: -1px;
-      color: #0b1a2b;
-      margin-bottom: 1rem;
+      line-height: 1.15;
+      letter-spacing: -1.2px;
+      color: #12161f;
+      margin-bottom: 1.2rem;
     }
 
     .home-intro .title span {
-      color: #91911f;
+      color: #3b5e6b;
+      font-weight: 600;
     }
 
     .home-intro .description {
-      font-size: 1.1rem;
-      color: #2a3f4f;
+      font-size: 1.15rem;
+      color: #2b3a47;
       max-width: 600px;
-      line-height: 1.6;
+      line-height: 1.7;
+      font-weight: 400;
     }
 
     .mission-values-container {
@@ -267,10 +272,10 @@
       flex-wrap: wrap;
       gap: 2rem;
       background: white;
-      border-radius: 32px;
-      padding: 2rem 2.5rem;
+      border-radius: 36px;
+      padding: 2.4rem 2.8rem;
       box-shadow: 0 12px 40px rgba(0, 0, 0, 0.02);
-      border: 1px solid rgba(145, 145, 31, 0.12);
+      border: 1px solid rgba(59, 94, 107, 0.06);
       align-items: stretch;
     }
 
@@ -282,49 +287,53 @@
       display: flex;
       align-items: center;
       gap: 0.6rem;
+      font-family: 'Outfit', sans-serif;
       font-size: 1.2rem;
       font-weight: 600;
       margin-bottom: 1rem;
+      color: #1a1e2b;
     }
 
     .box-info .title-info i {
-      color: #91911f;
-      font-size: 1.5rem;
+      color: #3b5e6b;
+      font-size: 1.4rem;
+      opacity: 0.8;
     }
 
     .list-description {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 0.6rem;
     }
 
     .list-description li {
-      font-size: 0.95rem;
-      color: #1e2f3f;
+      font-size: 0.98rem;
+      color: #2a3846;
     }
 
     .list-description li strong {
-      color: #0b1a2b;
+      color: #12161f;
+      font-weight: 600;
     }
 
     .vertical-divider {
       width: 2px;
-      background: rgba(145, 145, 31, 0.2);
+      background: rgba(59, 94, 107, 0.1);
       flex-shrink: 0;
     }
 
-    /* ——— DIFERENCIAIS (features) ——— */
+    /* ——— DIFERENCIAIS ——— */
     #features {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
     }
 
     .features-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 2.5rem 4rem;
+      gap: 2rem 3.5rem;
       margin-top: 1rem;
     }
 
@@ -333,23 +342,26 @@
       align-items: center;
       gap: 0.8rem;
       font-weight: 500;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       background: white;
-      padding: 0.8rem 1.8rem;
+      padding: 0.7rem 1.8rem;
       border-radius: 60px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.02);
-      border: 1px solid rgba(145, 145, 31, 0.08);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.01);
+      border: 1px solid rgba(59, 94, 107, 0.06);
+      color: #1f2b36;
+      letter-spacing: -0.2px;
     }
 
     .feature-item i {
-      font-size: 1.6rem;
-      color: #91911f;
+      font-size: 1.5rem;
+      color: #3b5e6b;
+      opacity: 0.8;
     }
 
-    /* ——— SERVIÇOS ——— */
+    /* ——— SERVIÇOS (cards com popup moderno) ——— */
     #dishes {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
       gap: 2rem;
       margin-top: 1rem;
     }
@@ -357,96 +369,192 @@
     .dish {
       background: white;
       border-radius: 28px;
-      padding: 1.8rem 1.2rem 1.8rem;
+      padding: 2rem 1.2rem 1.8rem;
       text-align: center;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.02);
-      border: 1px solid rgba(145, 145, 31, 0.06);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.01);
+      border: 1px solid rgba(59, 94, 107, 0.04);
       transition: 0.25s ease;
       cursor: pointer;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.6rem;
+      gap: 0.3rem;
+      position: relative;
     }
 
     .dish:hover {
       transform: translateY(-6px);
-      border-color: #91911f;
-      box-shadow: 0 20px 40px rgba(145, 145, 31, 0.08);
+      border-color: #3b5e6b;
+      box-shadow: 0 20px 48px rgba(59, 94, 107, 0.06);
     }
 
     .dish-image {
-      width: 110px;
-      height: 110px;
+      width: 100px;
+      height: 100px;
       object-fit: contain;
       margin-bottom: 0.2rem;
+      opacity: 0.8;
+      transition: 0.2s;
+    }
+
+    .dish:hover .dish-image {
+      opacity: 1;
     }
 
     .dish-title {
-      font-weight: 700;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
       font-size: 1.3rem;
-      color: #0b1a2b;
-      letter-spacing: -0.2px;
+      color: #12161f;
+      letter-spacing: -0.3px;
+      margin-top: 0.2rem;
     }
 
     .dish-description {
-      font-size: 0.9rem;
-      color: #3a4f5f;
+      font-size: 0.92rem;
+      color: #3a4a58;
       max-width: 200px;
-      margin: 0 auto;
-      line-height: 1.4;
+      margin: 0.2rem auto 0;
+      line-height: 1.5;
+    }
+
+    /* ——— POPUP MODAL (moderno) ——— */
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(18, 22, 31, 0.35);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .popup-overlay.active {
+      display: flex;
+    }
+
+    .popup-card {
+      background: white;
+      max-width: 460px;
+      width: 90%;
+      padding: 2.5rem 2.5rem 2.2rem;
+      border-radius: 40px;
+      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.08);
+      position: relative;
+      text-align: center;
+      animation: slideUp 0.3s ease;
+      border: 1px solid rgba(59, 94, 107, 0.04);
+    }
+
+    .popup-card .popup-icon {
+      font-size: 2.8rem;
+      color: #3b5e6b;
+      opacity: 0.5;
+      margin-bottom: 0.4rem;
+    }
+
+    .popup-card h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #12161f;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.8rem;
+    }
+
+    .popup-card p {
+      font-size: 1.05rem;
+      color: #2a3846;
+      line-height: 1.6;
+      margin-bottom: 1.8rem;
+    }
+
+    .popup-close {
+      background: #eef2f6;
+      border: none;
+      padding: 0.6rem 2rem;
+      border-radius: 60px;
+      font-weight: 500;
+      color: #1f2b36;
+      cursor: pointer;
+      transition: 0.15s;
+      font-size: 0.95rem;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .popup-close:hover {
+      background: #dce4ec;
+      color: #12161f;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
     }
 
     /* ——— CONTATO ——— */
     #contato {
-      padding-top: 2rem;
+      padding-top: 2.5rem;
       padding-bottom: 3rem;
     }
 
     #contato form {
-      max-width: 560px;
+      max-width: 540px;
       margin: 0 auto;
       background: white;
-      padding: 2.5rem 2.5rem 2.5rem;
-      border-radius: 32px;
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.02);
-      border: 1px solid rgba(145, 145, 31, 0.08);
+      padding: 2.5rem 2.8rem 2.8rem;
+      border-radius: 36px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.01);
+      border: 1px solid rgba(59, 94, 107, 0.04);
     }
 
     .form-group {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.6rem;
     }
 
     .form-group label {
       display: block;
       font-weight: 500;
-      margin-bottom: 0.4rem;
-      color: #0b1a2b;
+      margin-bottom: 0.3rem;
+      color: #1a1e2b;
       font-size: 0.95rem;
     }
 
     .form-group .required {
-      color: #91911f;
+      color: #3b5e6b;
       margin-left: 2px;
+      font-weight: 400;
     }
 
     .form-group input,
     .form-group textarea {
       width: 100%;
-      padding: 0.8rem 1rem;
-      border: 1px solid #dce4ec;
-      border-radius: 16px;
+      padding: 0.85rem 1.2rem;
+      border: 1px solid #dde5ed;
+      border-radius: 20px;
       font-family: 'Inter', sans-serif;
       font-size: 0.95rem;
       transition: 0.15s;
-      background: #f9fbfd;
+      background: #f8fafc;
+      color: #1a1e2b;
     }
 
     .form-group input:focus,
     .form-group textarea:focus {
       outline: none;
-      border-color: #91911f;
-      box-shadow: 0 0 0 4px rgba(145, 145, 31, 0.08);
+      border-color: #3b5e6b;
+      box-shadow: 0 0 0 4px rgba(59, 94, 107, 0.05);
       background: white;
     }
 
@@ -456,13 +564,14 @@
     }
 
     .error-message {
-      color: #7a7a3a;
+      color: #5a6f7a;
       display: block;
       margin-top: 0.3rem;
+      font-size: 0.8rem;
     }
 
     input[type="submit"] {
-      background: #91911f;
+      background: #3b5e6b;
       color: white;
       border: none;
       padding: 0.9rem 2.2rem;
@@ -472,14 +581,15 @@
       transition: 0.2s;
       cursor: pointer;
       width: 100%;
-      letter-spacing: 0.3px;
-      margin-top: 0.5rem;
+      letter-spacing: 0.2px;
+      font-family: 'Inter', sans-serif;
+      margin-top: 0.3rem;
     }
 
     input[type="submit"]:hover {
-      background: #7a7a19;
+      background: #2d4a55;
       transform: scale(1.01);
-      box-shadow: 0 8px 20px rgba(145, 145, 31, 0.2);
+      box-shadow: 0 8px 24px rgba(59, 94, 107, 0.15);
     }
 
     /* ——— FOOTER ——— */
@@ -488,20 +598,20 @@
       margin: 0 auto;
       padding: 1.8rem 2rem;
       text-align: center;
-      border-top: 1px solid rgba(145, 145, 31, 0.08);
-      color: #4a5f6f;
+      border-top: 1px solid rgba(59, 94, 107, 0.06);
+      color: #4a5f6b;
       font-size: 0.9rem;
       margin-top: 1rem;
     }
 
     footer a {
       font-weight: 500;
-      color: #0b1a2b;
+      color: #1a1e2b;
       transition: 0.15s;
     }
 
     footer a:hover {
-      color: #91911f;
+      color: #3b5e6b;
     }
 
     /* ——— RESPONSIVO ——— */
@@ -515,7 +625,7 @@
       }
 
       #navbar {
-        padding: 0.7rem 1.5rem;
+        padding: 0.6rem 1.2rem;
       }
 
       .menu-brand {
@@ -523,12 +633,12 @@
       }
 
       .menu-brand img {
-        width: 40px;
-        height: 40px;
+        width: 38px;
+        height: 38px;
       }
 
       .home-intro .title {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
       }
 
       .mission-values-container {
@@ -539,7 +649,7 @@
       .vertical-divider {
         width: 100%;
         height: 2px;
-        background: rgba(145, 145, 31, 0.1);
+        background: rgba(59, 94, 107, 0.06);
       }
 
       section {
@@ -547,7 +657,7 @@
       }
 
       .features-container {
-        gap: 1rem;
+        gap: 1rem 1.5rem;
       }
 
       .feature-item {
@@ -556,7 +666,7 @@
       }
 
       #dishes {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         gap: 1.2rem;
       }
 
@@ -565,13 +675,21 @@
       }
 
       .section-subtitle {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
+      }
+
+      .popup-card {
+        padding: 2rem 1.5rem;
       }
     }
 
     @media (max-width: 480px) {
       .home-intro .title {
-        font-size: 1.8rem;
+        font-size: 2rem;
+      }
+
+      .home-intro .description {
+        font-size: 1rem;
       }
 
       .dish {
@@ -585,17 +703,12 @@
 
       #dropdown_menu {
         right: 1rem;
-        width: 190px;
+        width: 180px;
       }
-    }
 
-    /* small helper */
-    .text-gold {
-      color: #91911f;
-    }
-
-    .bg-soft {
-      background: white;
+      .popup-card h3 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
@@ -604,7 +717,7 @@
   <header>
     <nav id="navbar">
       <div class="menu-brand">
-        <img src="src/imagens/logo.png" alt="Logo HNS" width="48" height="48" />
+        <img src="src/imagens/logo.png" alt="Logo HNS" width="44" height="44" />
         <span><span class="highlight">HNS</span> Soluções</span>
       </div>
 
@@ -662,7 +775,7 @@
               <i class="fas fa-bullseye"></i>
               <span>Nossa Missão</span>
             </h2>
-            <p class="description" style="color: #1e2f3f;">
+            <p class="description" style="color: #1f2b36; font-size: 1rem;">
               Proporcionar um ambiente digital seguro e confiável para os nossos clientes, através de soluções eficazes e personalizadas de Cyber Segurança.
             </p>
           </div>
@@ -684,29 +797,29 @@
 
     <hr class="divider" />
 
-    <!-- SERVIÇOS -->
+    <!-- SERVIÇOS com POPUP moderno -->
     <section id="menu">
       <h3 class="section-subtitle centered" id="servicos">Nossos serviços</h3>
       <div id="dishes">
-        <div class="dish" onclick="alert('Projetos: Oferecemos Serviços de Desenvolvimento e Implementação de Projetos de Segurança Personalizados')">
+        <div class="dish" data-popup="Projetos: Oferecemos Serviços de Desenvolvimento e Implementação de Projetos de Segurança Personalizados">
           <img src="src/imagens/1.png" alt="Projetos" class="dish-image" />
           <h3 class="dish-title">PROJETOS</h3>
           <span class="dish-description">Desenvolvimento e Implementação de Projetos de Segurança Personalizados</span>
         </div>
 
-        <div class="dish" onclick="alert('SOC: Oferece serviços de SOC remoto, centro de operações de segurança gerenciado remotamente.')">
+        <div class="dish" data-popup="SOC: Oferece serviços de SOC remoto, centro de operações de segurança (SOC) gerenciado remotamente.">
           <img src="src/imagens/3.png" alt="SOC" class="dish-image" />
           <h3 class="dish-title">SOC</h3>
           <span class="dish-description">Centro de Operações de Segurança (SOC) gerenciado remotamente.</span>
         </div>
 
-        <div class="dish" onclick="alert('Laudos: Pareceres Técnicos de Segurança Cibernética.')">
+        <div class="dish" data-popup="Laudos: Pareceres Técnicos de Segurança Cibernética.">
           <img src="src/imagens/4.png" alt="Laudos" class="dish-image" />
           <h3 class="dish-title">LAUDOS</h3>
           <span class="dish-description">Pareceres Técnicos de Segurança Cibernética.</span>
         </div>
 
-        <div class="dish" onclick="alert('Pen Test: Oferecemos serviços de Teste de Penetração (PEN Test) para avaliação da segurança cibernética.')">
+        <div class="dish" data-popup="Pen Test: Oferecemos serviços de Teste de Penetração (PEN Test) para avaliação da segurança cibernética.">
           <img src="src/imagens/2.png" alt="Pen Test" class="dish-image" />
           <h3 class="dish-title">PEN TEST</h3>
           <span class="dish-description">Teste de Penetração para avaliação da segurança cibernética.</span>
@@ -718,7 +831,7 @@
 
     <!-- CONTATO -->
     <section id="contato">
-      <h3 class="section-subtitle centered" style="color: #0b1a2b;">Contatos</h3>
+      <h3 class="section-subtitle centered" style="color: #1a1e2b;">Contatos</h3>
       <form action="https://formsubmit.co/contatos@hnssolucoes.com.br" method="POST">
         <input type="hidden" name="_next" value="https://hnssolucoes.com.br/index.html" />
         <input type="hidden" name="_subject" value="Novo email na página" />
@@ -750,28 +863,66 @@
     <p>&copy; 2026 - By <a href="https://github.com/Eme-cstt" target="_blank">Emerson Castro</a></p>
   </footer>
 
-  <!-- DROPDOWN TOGGLE -->
+  <!-- POPUP MODAL (moderno) -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-card">
+      <div class="popup-icon"><i class="fas fa-shield-halved"></i></div>
+      <h3 id="popupTitle">Título</h3>
+      <p id="popupDesc">Descrição do serviço</p>
+      <button class="popup-close" id="popupCloseBtn">Fechar</button>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
   <script>
     (function() {
+      // DROPDOWN
       const dropdownBtn = document.getElementById('dropdown_btn');
       const dropdown = document.getElementById('dropdown');
-
       dropdownBtn.addEventListener('click', function(e) {
         e.stopPropagation();
         dropdown.classList.toggle('open');
       });
-
       document.addEventListener('click', function(e) {
         if (!dropdown.contains(e.target)) {
           dropdown.classList.remove('open');
         }
       });
-
-      // fecha ao clicar em um link do dropdown
       document.querySelectorAll('#dropdown_menu a').forEach(link => {
-        link.addEventListener('click', () => {
-          dropdown.classList.remove('open');
+        link.addEventListener('click', () => dropdown.classList.remove('open'));
+      });
+
+      // POPUP MODERN
+      const overlay = document.getElementById('popupOverlay');
+      const popupTitle = document.getElementById('popupTitle');
+      const popupDesc = document.getElementById('popupDesc');
+      const closeBtn = document.getElementById('popupCloseBtn');
+
+      // abre popup com dados do card
+      document.querySelectorAll('.dish').forEach(card => {
+        card.addEventListener('click', function() {
+          const raw = this.getAttribute('data-popup') || '';
+          const [title, ...descParts] = raw.split(':');
+          const desc = descParts.join(':').trim() || 'Descrição detalhada do serviço.';
+          popupTitle.textContent = title.trim() || 'Serviço';
+          popupDesc.textContent = desc;
+          overlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
         });
+      });
+
+      // fecha popup
+      function closePopup() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      closeBtn.addEventListener('click', closePopup);
+      overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) closePopup();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closePopup();
       });
     })();
   </script>
