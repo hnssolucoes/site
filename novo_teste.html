@@ -238,20 +238,24 @@
       display: flex;
       flex-direction: column;
       gap: 3rem;
+      width: 100%;
     }
 
+    /* Bloco principal: ocupa toda a largura disponível */
     .home-intro {
-      max-width: 780px;
+      width: 100%;
+      max-width: 100%;
     }
 
     .home-intro .title {
       font-family: 'Outfit', sans-serif;
-      font-size: 3.2rem;
+      font-size: 3.6rem;
       font-weight: 700;
-      line-height: 1.15;
-      letter-spacing: -1.2px;
+      line-height: 1.1;
+      letter-spacing: -1.5px;
       color: #12161f;
       margin-bottom: 1.2rem;
+      max-width: 900px;
     }
 
     .home-intro .title span {
@@ -260,27 +264,30 @@
     }
 
     .home-intro .description {
-      font-size: 1.15rem;
+      font-size: 1.25rem;
       color: #2b3a47;
-      max-width: 600px;
-      line-height: 1.7;
+      max-width: 780px;
+      line-height: 1.8;
       font-weight: 400;
+      margin-bottom: 0.5rem;
     }
 
+    /* Mission/Values ocupa toda a largura e é bem espaçado */
     .mission-values-container {
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
+      gap: 2.5rem;
       background: white;
       border-radius: 36px;
-      padding: 2.4rem 2.8rem;
+      padding: 2.8rem 3.2rem;
       box-shadow: 0 12px 40px rgba(0, 0, 0, 0.02);
       border: 1px solid rgba(59, 94, 107, 0.06);
       align-items: stretch;
+      width: 100%;
     }
 
     .box-info {
-      flex: 1 1 200px;
+      flex: 1 1 220px;
     }
 
     .box-info .title-info {
@@ -288,7 +295,7 @@
       align-items: center;
       gap: 0.6rem;
       font-family: 'Outfit', sans-serif;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: 600;
       margin-bottom: 1rem;
       color: #1a1e2b;
@@ -296,7 +303,7 @@
 
     .box-info .title-info i {
       color: #3b5e6b;
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       opacity: 0.8;
     }
 
@@ -304,17 +311,24 @@
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 0.6rem;
+      gap: 0.7rem;
     }
 
     .list-description li {
-      font-size: 0.98rem;
+      font-size: 1.05rem;
       color: #2a3846;
+      line-height: 1.5;
     }
 
     .list-description li strong {
       color: #12161f;
       font-weight: 600;
+    }
+
+    .box-info .description {
+      font-size: 1.05rem;
+      color: #2a3846;
+      line-height: 1.6;
     }
 
     .vertical-divider {
@@ -358,7 +372,7 @@
       opacity: 0.8;
     }
 
-    /* ——— SERVIÇOS (cards com popup moderno) ——— */
+    /* ——— SERVIÇOS ——— */
     #dishes {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -418,7 +432,7 @@
       line-height: 1.5;
     }
 
-    /* ——— POPUP MODAL (moderno) ——— */
+    /* ——— POPUP ——— */
     .popup-overlay {
       display: none;
       position: fixed;
@@ -638,7 +652,13 @@
       }
 
       .home-intro .title {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        max-width: 100%;
+      }
+
+      .home-intro .description {
+        font-size: 1.1rem;
+        max-width: 100%;
       }
 
       .mission-values-container {
@@ -685,11 +705,20 @@
 
     @media (max-width: 480px) {
       .home-intro .title {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
 
       .home-intro .description {
         font-size: 1rem;
+      }
+
+      .box-info .title-info {
+        font-size: 1.1rem;
+      }
+
+      .list-description li,
+      .box-info .description {
+        font-size: 0.95rem;
       }
 
       .dish {
@@ -745,13 +774,13 @@
   </header>
 
   <main>
-    <!-- HOME -->
+    <!-- HOME — CORRIGIDA: ocupa toda a largura, textos maiores e coerentes -->
     <section id="home">
       <div id="container">
         <div class="home-intro">
           <h1 class="title">Protegendo o seu <span>futuro digital</span></h1>
           <p class="description">
-            Com mais de 10 anos de experiência em Cyber Segurança, a HNS Soluções oferece expertise e soluções personalizadas para proteger o seu negócio contra as ameaças cibernéticas em constante evolução.
+            Com mais de 10 anos de experiência em Cyber Segurança, a HNS Soluções oferece expertise e soluções personalizadas para proteger o seu negócio contra as ameaças cibernéticas em constante evolução. Nossa abordagem combina tecnologia de ponta, inteligência em segurança e um compromisso inabalável com a integridade dos seus dados.
           </p>
         </div>
 
@@ -775,8 +804,8 @@
               <i class="fas fa-bullseye"></i>
               <span>Nossa Missão</span>
             </h2>
-            <p class="description" style="color: #1f2b36; font-size: 1rem;">
-              Proporcionar um ambiente digital seguro e confiável para os nossos clientes, através de soluções eficazes e personalizadas de Cyber Segurança.
+            <p class="description">
+              Proporcionar um ambiente digital seguro e confiável para os nossos clientes, através de soluções eficazes e personalizadas de Cyber Segurança, garantindo a continuidade dos negócios e a proteção da informação.
             </p>
           </div>
         </div>
@@ -790,14 +819,14 @@
       <h3 class="section-subtitle centered" id="diferenciais">Nossos Diferenciais</h3>
       <div class="features-container">
         <div class="feature-item"><i class="fas fa-user-shield"></i> +10 Anos de Experiência</div>
-        <div class="feature-item"><i class="fas fa-clock"></i> Suporte Especializado</div>
+        <div class="feature-item"><i class="fas fa-clock"></i> Suporte Especializado 24/7</div>
         <div class="feature-item"><i class="fas fa-file-contract"></i> Conformidade LGPD</div>
       </div>
     </section>
 
     <hr class="divider" />
 
-    <!-- SERVIÇOS com POPUP moderno -->
+    <!-- SERVIÇOS -->
     <section id="menu">
       <h3 class="section-subtitle centered" id="servicos">Nossos serviços</h3>
       <div id="dishes">
@@ -863,7 +892,7 @@
     <p>&copy; 2026 - By <a href="https://github.com/Eme-cstt" target="_blank">Emerson Castro</a></p>
   </footer>
 
-  <!-- POPUP MODAL (moderno) -->
+  <!-- POPUP -->
   <div class="popup-overlay" id="popupOverlay">
     <div class="popup-card">
       <div class="popup-icon"><i class="fas fa-shield-halved"></i></div>
@@ -892,13 +921,12 @@
         link.addEventListener('click', () => dropdown.classList.remove('open'));
       });
 
-      // POPUP MODERN
+      // POPUP
       const overlay = document.getElementById('popupOverlay');
       const popupTitle = document.getElementById('popupTitle');
       const popupDesc = document.getElementById('popupDesc');
       const closeBtn = document.getElementById('popupCloseBtn');
 
-      // abre popup com dados do card
       document.querySelectorAll('.dish').forEach(card => {
         card.addEventListener('click', function() {
           const raw = this.getAttribute('data-popup') || '';
@@ -911,7 +939,6 @@
         });
       });
 
-      // fecha popup
       function closePopup() {
         overlay.classList.remove('active');
         document.body.style.overflow = '';
