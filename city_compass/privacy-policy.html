@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +11,10 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -22,7 +25,7 @@
 
         .topbar {
             background: #111827;
-            padding: 15px 20px;
+            padding: 14px 20px;
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -31,11 +34,12 @@
         .language-button {
             border: 1px solid #6b7280;
             background: transparent;
-            color: white;
-            padding: 8px 16px;
+            color: #ffffff;
+            padding: 8px 15px;
             border-radius: 6px;
             cursor: pointer;
             font-size: 14px;
+            transition: background 0.2s;
         }
 
         .language-button:hover {
@@ -49,14 +53,22 @@
         }
 
         .content {
-            background: white;
+            background: #ffffff;
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
         }
 
+        .language-content {
+            display: none;
+        }
+
+        .language-content.active {
+            display: block;
+        }
+
         h1 {
-            margin-top: 0;
+            margin: 0 0 8px;
             color: #111827;
             font-size: 30px;
         }
@@ -93,18 +105,6 @@
             color: #2563eb;
         }
 
-        [lang="pt-BR"] {
-            display: none;
-        }
-
-        body.pt-BR [lang="en"] {
-            display: none;
-        }
-
-        body.pt-BR [lang="pt-BR"] {
-            display: block;
-        }
-
         @media (max-width: 600px) {
             .content {
                 padding: 25px 20px;
@@ -117,25 +117,33 @@
             h2 {
                 font-size: 19px;
             }
+
+            .topbar {
+                padding: 12px 15px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<div class="topbar">
-    <button class="language-button" onclick="toggleLanguage()">
-        <span id="languageLabel">Português</span>
+<header class="topbar">
+    <button
+        type="button"
+        id="languageButton"
+        class="language-button"
+        aria-label="Change language">
+        🇧🇷 Português
     </button>
-</div>
+</header>
 
-<div class="container">
+<main class="container">
 
     <div class="content">
 
         <!-- ENGLISH -->
 
-        <div lang="en">
+        <section id="english" class="language-content active">
 
             <h1>Privacy Policy</h1>
 
@@ -220,8 +228,9 @@
 
             <p>
                 For more information about how Google processes information,
-                please visit:
-                <a href="https://policies.google.com/privacy" target="_blank"
+                please visit
+                <a href="https://policies.google.com/privacy"
+                   target="_blank"
                    rel="noopener noreferrer">
                     Google Privacy Policy
                 </a>.
@@ -357,7 +366,8 @@
 
             <p>
                 Website:
-                <a href="https://hnssolucoes.com.br" target="_blank"
+                <a href="https://hnssolucoes.com.br"
+                   target="_blank"
                    rel="noopener noreferrer">
                     hnssolucoes.com.br
                 </a>
@@ -370,12 +380,12 @@
                 understood this Privacy Policy.
             </p>
 
-        </div>
+        </section>
 
 
         <!-- PORTUGUÊS -->
 
-        <div lang="pt-BR">
+        <section id="portuguese" class="language-content">
 
             <h1>Política de Privacidade</h1>
 
@@ -464,8 +474,9 @@
 
             <p>
                 Para mais informações sobre como o Google trata informações,
-                consulte:
-                <a href="https://policies.google.com/privacy" target="_blank"
+                consulte
+                <a href="https://policies.google.com/privacy"
+                   target="_blank"
                    rel="noopener noreferrer">
                     Política de Privacidade do Google
                 </a>.
@@ -605,7 +616,8 @@
 
             <p>
                 Site:
-                <a href="https://hnssolucoes.com.br" target="_blank"
+                <a href="https://hnssolucoes.com.br"
+                   target="_blank"
                    rel="noopener noreferrer">
                     hnssolucoes.com.br
                 </a>
@@ -618,7 +630,7 @@
                 esta Política de Privacidade.
             </p>
 
-        </div>
+        </section>
 
     </div>
 
@@ -626,25 +638,44 @@
         © 2026 HNS Soluções · City Compass
     </div>
 
-</div>
+</main>
 
 <script>
-    let portuguese = false;
+    document.addEventListener("DOMContentLoaded", function () {
 
-    function toggleLanguage() {
-        portuguese = !portuguese;
+        const button = document.getElementById("languageButton");
+        const english = document.getElementById("english");
+        const portuguese = document.getElementById("portuguese");
 
-        document.body.classList.toggle("pt-BR", portuguese);
+        let currentLanguage = "en";
 
-        document.documentElement.lang = portuguese
-            ? "pt-BR"
-            : "en";
+        button.addEventListener("click", function () {
 
-        document.getElementById("languageLabel").textContent =
-            portuguese ? "English" : "Português";
-    }
+            if (currentLanguage === "en") {
+
+                english.classList.remove("active");
+                portuguese.classList.add("active");
+
+                document.documentElement.lang = "pt-BR";
+
+                button.textContent = "🇺🇸 English";
+
+                currentLanguage = "pt";
+
+            } else {
+
+                portuguese.classList.remove("active");
+                english.classList.add("active");
+
+                document.documentElement.lang = "en";
+
+                button.textContent = "🇧🇷 Português";
+
+                currentLanguage = "en";
+            }
+        });
+    });
 </script>
 
 </body>
 </html>
-```
